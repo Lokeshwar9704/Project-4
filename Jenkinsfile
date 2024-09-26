@@ -36,7 +36,7 @@ stage('Run Tests') {
         echo 'Running unit tests...'
         sh'''
             source $(PYTHON_ENV)/bin/activate      #Activate the virtual environment 
-            pytest tests/                          #Run the unit tests using pytast
+            pytest tests                          #Run the unit tests using pytast
         '''
           }
 }
